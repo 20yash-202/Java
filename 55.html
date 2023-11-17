@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>55. Write a Java Program to accept number of week’s day (1-7) and print name of the day. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class week{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("ENTER Number of Day: "); <br>
+            String s = br.readLine(); <br>
+            int day= Integer.parseInt(s); <br>
+            switch(day){ <br>
+            case 1: <br>
+            System.out.println("Monday"); <br>
+            break; <br>
+            case 2: <br>
+            System.out.println("Tuesday"); <br>
+            break; <br>
+            case 3: <br>
+            System.out.println("Wednesday"); <br>
+            break; <br>
+            case 4: <br>
+            System.out.println("Thursday"); <br>
+            break; <br>
+            case 5: <br>
+            System.out.println("Friday"); <br>
+            break; <br>
+            case 6: <br>
+            System.out.println("Saturday"); <br>
+            break; <br>
+            case 7: <br>
+            System.out.println("Sunday"); <br>
+            break; <br>
+            default: <br>
+            System.out.println("Invalid number"); <br>
+            break; <br>
+            }}}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog55.jpg"  class="img55">

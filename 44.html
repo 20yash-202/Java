@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>44. Java program to find factorial of any number.  </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class factorial{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter any number: "); <br>
+            String s = br.readLine(); <br>
+            int n= Integer.parseInt(s); <br>
+            factorial obj1 = new factorial(); <br>
+            int b= obj1.factorial1(n); <br>
+            System.out.print("factorial of "+n+" is "+b); <br>
+            } <br>
+            int factorial1(int x){ <br>
+            if(x==1){return 1;} <br>
+            else{ <br>
+            x= factorial1(x-1) * x; <br>
+            return x;}}} <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog44.jpg"  class="img44">

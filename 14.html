@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>14. Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class num{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter Any Number: ");  <br>
+            String str= br.readLine(); <br>
+            int n= Integer.parseInt(str); <br>
+            System.out.println("value is: "+ (n+n*n+n*n*n));}}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog14.jpg"  class="img14">

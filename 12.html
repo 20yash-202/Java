@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>12. Write a Java program to count the letters, spaces, numbers and other characters of an input string. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class count{ <br>
+            void count1(String s){ <br>
+            int letter=0; int space=0; int num=0; int other=0; <br>
+            for(int i=0; i< s.length(); i++){ <br>
+            if(Character.isLetter(s.charAt(i))){ <br>
+            letter++;} <br>
+            else if(Character.isDigit(s.charAt(i))){ <br>
+            num++;} <br>
+            else if(Character.isSpaceChar(s.charAt(i))){ <br>
+            space++;} <br>
+            else{other++;}} <br>
+            System.out.println("String Entered is: "+s); <br>
+            System.out.println("Total Letters is: "+letter); <br>
+            System.out.println("Total Numbers is: "+num); <br>
+            System.out.println("Total Space is: "+space); <br>
+            System.out.println("Other Characters is: "+other); <br>
+            } <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter Any String: ");  <br>
+            String str= br.readLine(); <br>
+            count obj= new count(); <br>
+            obj.count1(str); <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog12.jpg"  class="img12">

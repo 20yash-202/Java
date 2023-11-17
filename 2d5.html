@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>5. Program to display the lower triangular matrix </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class LowerTriangular    
+        {    
+            public static void main(String[] args) {    
+            int rows, cols;    
+            //Initialize matrix a    
+                int a[][] = {       
+                                {1, 2, 3},    
+                                {8, 6, 4},    
+                                {4, 5, 6}    
+                            };    
+                      
+                  //Calculates number of rows and columns present in given matrix    
+                  rows = a.length;    
+                  cols = a[0].length;    
+                    
+                  if(rows != cols){    
+                      System.out.println("Matrix should be a square matrix");    
+                  }    
+                  else {    
+                      //Performs required operation to convert given matrix into lower triangular matrix    
+                      System.out.println("Lower triangular matrix: ");    
+                      for(int i = 0; i < rows; i++){    
+                          for(int j = 0; j < cols; j++){    
+                            if(j > i)    
+                              System.out.print("0 ");    
+                            else    
+                              System.out.print(a[i][j] + " ");    
+                        }    
+                        System.out.println();    
+                    }    
+                }    
+            }    
+        }      
+ 
+     </pre>

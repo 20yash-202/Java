@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>8.  Program to find the sum of each row and each column of a matrix</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Sum of each Row and Column of a Matrix in Java language
+        import java.util.Scanner;
+        
+        public class Main {
+        
+            public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+        
+                int a[][], i, j, x, y, sum = 0;
+                a = new int[10][10];
+        
+                System.out.print("-----Enter the number of rows & columns of the matrix-----\n");
+                x = in.nextInt();
+                y = in.nextInt();
+        
+                System.out.print("\n-----Enter the co-efficients of the matrix-----\n");
+                for (i = 0; i < x; ++i) {
+                    for (j = 0; j < y; ++j) {
+                        a[i][j] = in.nextInt();
+                    }
+                    System.out.print("\n");
+                }
+        
+                for (i = 0; i < x; ++i) {
+                    for (j = 0; j < y; ++j) {
+                        sum = sum + a[i][j] ;
+                    }
+             
+                    System.out.print("The Sum of the " + i + " position row is = " + sum + "\n");
+                    sum = 0; 
+                }
+                System.out.print("\n");
+        
+                sum = 0;
+        
+                for (j = 0; j < y; ++j) {
+                    for (i = 0; i < x; ++i) {
+                        sum = sum + a[i][j];
+                    }
+             
+                    System.out.print("The Sum of the " + j + " position column is = " + sum + "\n");
+                    sum = 0;
+                }
+            }
+        }
+    
+ 
+     </pre>

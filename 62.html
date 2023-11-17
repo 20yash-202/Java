@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>62. Write a Java program to display the multiplication table of a given integer.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class table{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("ENTER number to print table: "); <br>
+            String s = br.readLine(); <br>
+            int num= Integer.parseInt(s); <br>
+            System.out.println("Table of "+num+" is: "); <br>
+            for(int i=1;i< 11;i++){ <br>
+            System.out.println(num+" x "+i+" = "+num*i); <br>
+            } <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog62.jpg"  class="img62">

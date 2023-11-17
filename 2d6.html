@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>6. Program to display the upper triangular matrix </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Java Program to print the upper triangular matrix
+import java.io.*;
+
+class GFG {
+
+	// Print matrix using iterative approach
+	public static void printMatrix(int[][] a)
+	{
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[0].length; j++)
+				System.out.print(a[i][j] + " ");
+			System.out.println();
+		}
+	}
+	public static void upperTriangularMatrix(int matrix[][])
+	{
+		int row = matrix.length;
+		int col = matrix[0].length;
+	
+		// if number of rows and 
+		// columns are not equal,then
+		// return back
+		if (row != col) {
+			System.out.println(
+				"Matrix should be a Square Matrix");
+			return;
+		}
+		else {
+		
+			// looping over the whole matrix
+			for (int i = 0; i < row; i++) {
+				for (int j = 0; j < col; j++) {
+				
+					// for the rows ,whose row number is
+					// greater then column number,mark the
+					// element as 0
+					if (i > j) {
+						matrix[i][j] = 0;
+					}
+				}
+			}
+
+			System.out.println(
+				"Upper Triangular Matrix is given by :-");
+		
+			// printing the upper triangular matrix
+			printMatrix(matrix);
+		}
+	}
+	public static void main(String[] args)
+	{
+		int mat[][] = { { 2, 1, 4 }, { 1, 2, 3 }, { 3, 6, 2 } };
+	
+		// calling the function
+		upperTriangularMatrix(mat);
+	}
+}
+    
+ 
+     </pre>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>5. Write a Java program that takes five numbers as input to calculate and print the average of the numbers.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class Average{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            int avg=0; <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            for(int i=1; i<=5;i++){ <br>
+            System.out.print("Enter the value of number "+i+" "); <br>
+            String str= br.readLine(); <br>
+            avg = avg+ Integer.parseInt(str); <br>
+            } <br>
+            System.out.println("Average of 5 numbers is: "+ (avg/5)); <br>
+            }} <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog5.jpg"  class="img5">

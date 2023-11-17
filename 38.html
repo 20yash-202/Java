@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>38. Java program to find surface area of cuboid.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class surofcuboid{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter Length: ");  <br>
+            String str= br.readLine(); <br>
+            int l = Integer.parseInt(str); <br>
+            System.out.print("Enter Height: ");  <br>
+            String str1= br.readLine(); <br>
+            int h = Integer.parseInt(str1); <br>
+            System.out.print("Enter Breath: ");  <br>
+            String str2= br.readLine(); <br>
+            int b = Integer.parseInt(str2); <br>
+            int area= 2*((l*b)+ (b*h)+ (h*l)); <br>
+            System.out.println("Surface Area of Cuboid is: "+area ); <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog38.jpg"  class="img38">

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>9. Program to find the transpose of a given matrix</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class Transpose {
+
+            public static void main(String[] args) {
+                int row = 2, column = 3;
+                int[][] matrix = { {2, 3, 4}, {5, 6, 4} };
+        
+                // Display current matrix
+                display(matrix);
+        
+                // Transpose the matrix
+                int[][] transpose = new int[column][row];
+                for(int i = 0; i < row; i++) {
+                    for (int j = 0; j < column; j++) {
+                        transpose[j][i] = matrix[i][j];
+                    }
+                }
+        
+                // Display transposed matrix
+                display(transpose);
+            }
+        
+            public static void display(int[][] matrix) {
+                System.out.println("The matrix is: ");
+                for(int[] row : matrix) {
+                    for (int column : row) {
+                        System.out.print(column + "    ");
+                    }
+                    System.out.println();
+                }
+            }
+        }
+    
+ 
+     </pre>

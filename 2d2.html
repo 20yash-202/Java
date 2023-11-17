@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>2. Program to Multiply Two Matrices</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class MatrixMultiplicationExample{  
+            public static void main(String args[]){  
+            //creating two matrices    
+            int a[][]={{1,1,1},{2,2,2},{3,3,3}};    
+            int b[][]={{1,1,1},{2,2,2},{3,3,3}};    
+                
+            //creating another matrix to store the multiplication of two matrices    
+            int c[][]=new int[3][3];  //3 rows and 3 columns  
+                
+            //multiplying and printing multiplication of 2 matrices    
+            for(int i=0;i< 3;i++){    
+            for(int j=0;j< 3;j++){    
+            c[i][j]=0;      
+            for(int k=0;k< 3;k++)      
+            {      
+            c[i][j]+=a[i][k]*b[k][j];      
+            }//end of k loop  
+            System.out.print(c[i][j]+" ");  //printing matrix element  
+            }//end of j loop  
+            System.out.println();//new line    
+            }    
+            }}   
+     </pre>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>60. Write a Java program to display the cube of the number upto given an integer.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class cube{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("ENTER Number to print cube: "); <br>
+            String s = br.readLine(); <br>
+            int num1= Integer.parseInt(s); <br>
+            System.out.print("\nENTER Number upto which cube  to print: "); <br>
+            String s1 = br.readLine(); <br>
+            int num2= Integer.parseInt(s1); <br>
+            while(num1<=num2){ <br>
+            int cube=num1*num1*num1; <br>
+            if(cube<=num2){ <br>
+            System.out.println(cube);} <br>
+            num1=cube;} <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog60.jpg"  class="img60">

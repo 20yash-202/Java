@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>8. Program to print the elements of an array present on odd position.  </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class OddPosition {  
+            public static void main(String[] args) {  
+                //Initialize array  
+               int [] arr = new int [] {1, 2, 3, 4, 5};  
+                System.out.println("Elements of given array present on odd position: ");  
+                //Loop through the array by incrementing value of i by 2  
+                for (int i = 0; i < arr.length; i = i+2) {  
+                    System.out.println(arr[i]);  
+                }  
+            }  
+        }      
+     </pre>

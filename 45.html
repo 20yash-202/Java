@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>45. Java Program to calculate electricity bill.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class electricitybill{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter Total Units Consumed: "); <br>
+            String s = br.readLine(); <br>
+            int total_units= Integer.parseInt(s); <br>
+            for(int i =0;i< 3;i++){ <br>
+            if(total_units == 0){break;} <br>
+            else{ <br>
+            total_units= total_units-50;} <br>
+            } <br>
+            float a= 50*1.5f; float b= 50*2.5f; float c= 50*4.5f;  <br>
+            float d= total_units*5.5f; <br>
+            System.out.println("\n..........YOUR ELECTRICITY BILL IS........."); <br>
+            System.out.println("UNITS  RATE  AMOUNT"); <br>
+            System.out.println("..................................."); <br>
+            System.out.println("50 x 1.5 = "+a); <br>
+            System.out.println("50 x 2.5 = "+b); <br>
+            System.out.println("50 x 4.5 = "+c); <br>
+            System.out.println(total_units+" x 5.5 = "+d); <br>
+            System.out.println("..................................."); <br>
+            System.out.println("TOTAL AMOUNT TO BE PAID IS: "+(a+b+c+d)); <br>
+            System.out.println("..................................."); <br>
+            }} <br>
+            
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog45.jpg"  class="img45">

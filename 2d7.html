@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>7.  Program to find the frequency of odd & even numbers in the given matrix</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        class Main {
+            private static int rows, cols, even, odd;
+            private static int matrix[][];
+            public static void printMatrix() {
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < cols; j++) {
+                        if (matrix[i][j] % 2 == 0)
+                            even++;
+                        else
+                            odd++; } } }
+            public static void main(String[] args) {
+                java.util.Scanner sc = new java.util.Scanner(System.in);
+                System.out.print("Enter the number of rows : ");
+                rows = sc.nextInt();
+                System.out.print("Enter the number of columns : ");
+                cols = sc.nextInt();
+                matrix = new int[rows][cols];
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < cols; j++) {
+                        System.out.print("Element at " + (i + 1) + (j + 1) + ' ');
+                        matrix[i][j] = sc.nextInt();} }
+                printMatrix();
+                System.out.println("Frequency of odd numbers : " + odd + "\nFrequency of even numbers : " + even);  } }
+     </pre>

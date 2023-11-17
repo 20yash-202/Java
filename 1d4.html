@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>4. Program to print the duplicate elements of an array</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class DuplicateElement {  
+            public static void main(String[] args) {  
+                    //Initialize array  
+                    int [] arr = new int [] {1, 2, 3, 4, 2, 7, 8, 8, 3};  
+                    System.out.println("Duplicate elements in given array: ");  
+                    //Searches for duplicate element  
+                    for(int i = 0; i < arr.length; i++) {  
+                        for(int j = i + 1; j < arr.length; j++) {  
+                            if(arr[i] == arr[j])  
+                                System.out.println(arr[j]);  
+                        }  
+                    }  
+                }  
+            }  
+                
+     </pre>

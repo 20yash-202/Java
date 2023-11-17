@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>3. Program to subtract the two matrices </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Java Program to Subtract the Two Matrices
+
+import java.io.*;
+
+class GFG {
+
+	// Function to print Matrix
+	static void printMatrix(int M[][], int rowSize,
+							int colSize)
+	{
+		for (int i = 0; i < rowSize; i++) {
+			for (int j = 0; j < colSize; j++)
+				System.out.print(M[i][j] + " ");
+
+			System.out.println();
+		}
+	}
+
+	// Function to subtract the two matrices
+	// and store in matrix C
+	static int[][] subtract(int A[][], int B[][], int size)
+	{
+		int i, j;
+		int C[][] = new int[size][size];
+
+		for (i = 0; i < size; i++)
+			for (j = 0; j < size; j++)
+				C[i][j] = A[i][j] - B[i][j];
+
+		return C;
+	}
+
+	// Driver code
+	public static void main(String[] args)
+	{
+		int size = 3;
+
+		int A[][] = { { 50, 20, 30 },
+					{ 60, 30, 10 },
+					{ 30, 80, 10 } };
+		// Print the matrices A
+		System.out.println("\nMatrix A:");
+		printMatrix(A, size, size);
+
+		int B[][] = { { 10, 10, 5 },
+					{ 20, 10, 12 },
+					{ 23, 21, 12 } };
+		// Print the matrices B
+		System.out.println("\nMatrix B:");
+		printMatrix(B, size, size);
+
+		// Add the two matrices
+		int C[][] = subtract(A, B, size);
+
+		// Print the result
+		System.out.println("\nResultant Matrix:");
+		printMatrix(C, size, size);
+	}
+}
+ 
+     </pre>

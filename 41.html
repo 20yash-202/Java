@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>41. Java program to calculate average marks.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class Avgmarks{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("How many subjects: "); <br>
+            String s = br.readLine(); <br>
+            int n= Integer.parseInt(s); <br>
+            int sum=0; <br>
+            for(int i=1; i<=n;i++){ <br>
+            System.out.print("Enter marks of subject  "+i+" "); <br>
+            String s1 = br.readLine(); <br>
+            int m= Integer.parseInt(s1); <br>
+            sum=sum+m; <br>
+            } <br>
+            System.out.print("\nAverage Marks of Student is: "+(sum/n)); <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog41.jpg"  class="img41">

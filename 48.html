@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>48. Java Program To Calculate Batting Average.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class battingavg{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("ENTER TOTAL NUMBER OF RUNS: "); <br>
+            String s = br.readLine(); <br>
+            int runs= Integer.parseInt(s); <br>
+            System.out.print("\nENTER TOTAL NUMBER OF DISMISSALS: "); <br>
+            String s1 = br.readLine(); <br>
+            int dis= Integer.parseInt(s1); <br>
+            float battingavg= runs/dis; <br>
+            System.out.println("BATTING AVERAGE IS: "+ battingavg); <br>
+            }} <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog48.jpg"  class="img48">

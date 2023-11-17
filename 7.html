@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>7. Write a Java program to convert a decimal number to binary numbers.  </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class dec{ <br>
+            void DecimalToBinary(int x){ <br>
+            String str= ""; <br>
+            while(x!=1){ <br>
+            int rem= x%2; <br>
+            x=x/2; <br>
+            str= str+" "+rem;} <br>
+            str= str+" "+1; <br>
+            System.out.println("Binary: "+str+" (!!!!!read from right side)"); <br>
+            } <br>
+            public static void main(String st[]){ <br>
+            int num= 14; <br>
+            dec obj= new dec(); <br>
+            System.out.println("Decimal: "+num); <br>
+            obj.DecimalToBinary(num); <br>
+            }} <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog7.jpg"  class="img7">

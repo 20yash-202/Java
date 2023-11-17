@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>6. Program to print the elements of an array in reverse order </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class ReverseArray {  
+            public static void main(String[] args) {  
+                //Initialize array  
+                int [] arr = new int [] {1, 2, 3, 4, 5};  
+                System.out.println("Original array: ");  
+                for (int i = 0; i < arr.length; i++) {  
+                    System.out.print(arr[i] + " ");  
+                }  
+                System.out.println();  
+                System.out.println("Array in reverse order: ");  
+                //Loop through the array in reverse order  
+                for (int i = arr.length-1; i >= 0; i--) {  
+                    System.out.print(arr[i] + " ");  
+                }  
+            }  
+        }  
+         
+                
+     </pre>

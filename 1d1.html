@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>1. Program to copy all elements of one array into another array</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class CopyArray {    
+            public static void main(String[] args) {        
+                     //Initialize array     
+                int [] arr1 = new int [] {1, 2, 3, 4, 5};     
+                 //Create another array arr2 with size of arr1    
+                int arr2[] = new int[arr1.length];    
+                //Copying all elements of one array into another    
+                for (int i = 0; i < arr1.length; i++) {     
+                    arr2[i] = arr1[i];     
+                }      
+                 //Displaying elements of array arr1     
+                System.out.println("Elements of original array: ");    
+                for (int i = 0; i < arr1.length; i++) {     
+                   System.out.print(arr1[i] + " ");    
+                }     
+                    
+                System.out.println();    
+                    
+                //Displaying elements of array arr2     
+                System.out.println("Elements of new array: ");    
+                for (int i = 0; i < arr2.length; i++) {     
+                   System.out.print(arr2[i] + " ");    
+                }     
+            }    
+        }    
+                       
+     </pre>

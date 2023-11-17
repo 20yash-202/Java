@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>8. Write a Java program to convert a binary number to decimal number.   </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class bin{ <br>
+            void BinaryToDecimal(int x){ <br>
+            int count=0; double dec=0; <br>
+            while(x!=0){ <br>
+            double rem= x%10; <br>
+            x=x/10; <br>
+            double a= Math.pow(2,count); <br>
+            dec= rem * a + dec; <br>
+            count++;} <br>
+            System.out.println("Decimal: "+dec); <br>
+            } <br>
+            public static void main(String st[]){ <br>
+            int num= 1110; <br>
+            bin obj= new bin(); <br>
+            System.out.println("Binary: "+num); <br>
+            obj.BinaryToDecimal(num); <br>
+            }} <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog8.jpg"  class="img8">

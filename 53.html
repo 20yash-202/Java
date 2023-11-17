@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>53. Write a Java program to find the number of days in a month.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class year{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("ENTER Number of Month: "); <br>
+            String s = br.readLine(); <br>
+            int month= Integer.parseInt(s); <br>
+            switch(month){ <br>
+            case 1: <br>
+            System.out.println("January has 31 days"); <br>
+            break; <br>
+            case 2: <br>
+            System.out.println("February has 28 days"); <br>
+            break; <br>
+            case 3: <br>
+            System.out.println("March has 31 days"); <br>
+            break; <br>
+            case 4: <br>
+            System.out.println("April has 30 days"); <br>
+            break; <br>
+            case 5: <br>
+            System.out.println("May has 31 days"); <br>
+            break; <br>
+            case 6: <br>
+            System.out.println("June has 30 days"); <br>
+            break; <br>
+            case 7: <br>
+            System.out.println("July has 31 days"); <br>
+            break; <br>
+            case 8: <br>
+            System.out.println("August has 31 days"); <br>
+            break; <br>
+            case 9: <br>
+            System.out.println("September has 30 days"); <br>
+            break; <br>
+            case 10: <br>
+            System.out.println("October has 31 days"); <br>
+            break; <br>
+            case 11: <br>
+            System.out.println("November has 30 days"); <br>
+            break; <br>
+            case 12: <br>
+            System.out.println("December has 31 days"); <br>
+            break; <br>
+            default: <br>
+            System.out.println("Invalid month number"); <br>
+            break; <br>
+            } <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog53.jpg"  class="img53">
