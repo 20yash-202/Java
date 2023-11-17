@@ -1,0 +1,65 @@
+.navbar{
+    height: 15vh;
+    background-image: linear-gradient(to right, rgb(85, 5, 85), rgb(224, 11, 163));
+}
+
+.nav-link{
+    font-size: 6vh;
+    margin-right: 5%;
+    font-family:fantasy;
+    text-decoration: wavy;
+    color: black;
+}
+.heading{
+    margin-top:0%;
+    margin-right: 50%;
+ font-size: 10vh;
+}
+.content{
+    text-align: center;
+    font-size: 9vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+ .link{
+    font-size: 42px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: wavy;
+    color:rgb(16, 154, 218);
+ }
+ .prog{
+    font-size: 4vh;
+    font-family:'Times New Roman', Times, serif;
+    color:black;
+    text-decoration: wavy;
+ }
+ .prog1{
+   font-size: 4vh;
+   font-family:'Times New Roman', Times, serif;
+   color:black;
+   text-decoration: wavy;
+}
+ .box{
+    height: fit-content;
+    width: 70vw;
+    background-color:rgb(245, 234, 221);
+    margin-left: 10vw;
+ }
+ .box1{
+    height: 70vh;
+    width: 70vw;
+    background-image: linear-gradient( azure,azure,azure,cyan) ;
+ }
+ .para{
+    font-size: 4vh;
+ }
+ .prog:hover{
+   background-color:rgb(227, 211, 33);
+   font-size: 5vh;
+ }
+ .b1{
+   height: 12vh;
+   width: 15vw;
+   background-color:rgb(199, 25, 199);
+   font-size: 24px;
+ }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>8.Write a Java program to create an interface Playable with a method play() that takes no arguments and returns void. Create three classes Football, Volleyball, and Basketball that implement the Playable interface and override the play() method to play the respective sports.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Playable.java
+        // Declare the Playable interface
+        interface Playable {
+            // Declare the abstract method "play" that classes implementing this interface must provide
+            void play();
+        }
+        //Football.java
+        class Football implements Playable {
+          public void play() {
+            System.out.println("Playing football");
+            // Add code to play football
+          }
+        }
+        // Volleyball.java
+
+        // Declare the Volleyball class, which implements the Playable interface
+        class Volleyball implements Playable {
+            // Implement the "play" method required by the Playable interface
+            public void play() {
+                // Print a message indicating that volleyball is being played
+                System.out.println("Playing volleyball");
+                // Additional code to play volleyball can be added here
+            }
+        }
+        // Basketball.java
+
+        // Declare the Basketball class, which implements the Playable interface
+        class Basketball implements Playable {
+            // Implement the "play" method required by the Playable interface
+            public void play() {
+                // Print a message indicating that basketball is being played
+                System.out.println("Playing basketball");
+                // Additional code to play basketball can be added here
+            }
+        } 
+        // Main.java
+
+        // Declare the Main class
+        public class Main {
+            public static void main(String[] args) {
+                // Create instances of Playable objects for football, volleyball, and basketball
+                Playable football = new Football();
+                Playable volleyball = new Volleyball();
+                Playable basketball = new Basketball();
+        
+                // Call the "play" method on each Playable object to play different sports
+                football.play();
+                volleyball.play();
+                basketball.play();
+            }
+        }
+                                             
+     </pre>

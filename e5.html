@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>5.  Write a Java program to create a method that takes an integer as a parameter and throws an exception if the number is odd.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class Exception_OddNumber {
+            public static void main(String[] args) {
+              int n = 18;
+              trynumber(n);
+              n = 7;
+              trynumber(n);
+            }
+          
+            public static void trynumber(int n) {
+              try {
+                checkEvenNumber(n);
+                System.out.println(n + " is even.");
+              } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage());
+              }
+            }
+          
+            public static void checkEvenNumber(int number) {
+              if (number % 2 != 0) {
+                throw new IllegalArgumentException(number + " is odd.");
+              }
+            }
+          }
+          
+     </pre>

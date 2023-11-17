@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>2.Create the table in the database from Java API. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.sql.*;
+
+        public class GFG {
+            public static void main(String arg[])
+            {
+                Connection connection = null;
+                try {
+                    // below two lines are used for connectivity.
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    connection = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/mydb",
+                        "mydbuser", "mydbuser");
+        
+                        String sql = "CREATE TABLE REGISTRATION " +
+                        "(id INTEGER not NULL, " +
+                        " first VARCHAR(255), " + 
+                        " last VARCHAR(255), " + 
+                        " age INTEGER, " + 
+                        " PRIMARY KEY ( id ))"; 
+     
+              stmt.executeUpdate(sql);
+              System.out.println("Created table in given database...");
+                }
+                catch (Exception exception) {
+                    System.out.println(exception);
+                }
+            } // function ends
+        } // class ends
+                                  
+     </pre>

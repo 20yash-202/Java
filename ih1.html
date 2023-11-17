@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>1. Write a Java program to create a class called Animal with a method called makeSound(). Create a subclass called Cat that overrides the makeSound() method to bark.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Animal.java
+        public class Animal {
+            public void makeSound() {
+                System.out.println("The animal makes a sound.");
+            }
+        }
+        // Cat.java
+        public class Cat extends Animal {
+            @Override
+            public void makeSound() {
+                System.out.println("The cat quarrels.");
+            }
+        }
+        // Main.java
+        public class Main {
+            public static void main(String[] args) {
+                Animal animal = new Animal();
+                Cat cat = new Cat();        
+                animal.makeSound();
+                cat.makeSound();
+            }
+        }
+                                 
+     </pre>

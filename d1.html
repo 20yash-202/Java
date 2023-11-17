@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>1.How to convert String to int</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Java program to convert String to int
+        // using Integer.parseInt() method
+        import java.io.*;
+        
+        class GFG {
+            // Function to convert String to integer
+            public static int convert(String str)
+            {
+                int val = 0;
+                System.out.println("String = " + str);
+        
+                // Convert the String
+                try {
+                    val = Integer.parseInt(str);
+                }
+                catch (NumberFormatException e) {
+        
+                    // This is thrown when the String
+                    // contains characters other than digits
+                    System.out.println("Invalid String");
+                }
+                return val;
+            }
+        
+            // Driver code
+            public static void main(String[] args)
+            {
+        
+                String str = "1234";
+                int val = convert(str);
+                System.out.println("Integer value = " + val);
+                System.out.println();
+        
+                str = "123s";
+                val = convert(str);
+                System.out.println("Integer value = " + val);
+            }
+        }
+        
+     </pre>

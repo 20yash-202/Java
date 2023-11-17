@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>2.Write a Java program to create a class called Vehicle with a method called drive(). Create a subclass called Car that overrides the drive() method to print "Repairing a car".</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Vehicle.java
+        // Parent class Vehicle
+        class Vehicle {
+            public void drive() {
+                System.out.println("Repairing a vehicle");
+            }
+        }
+        // Car.java
+        // Child class Car
+        class Car extends Vehicle {
+            @Override
+            public void drive() {
+                System.out.println("Repairing a car");
+            }
+        }
+        // Main.java
+        // Main class
+        public class Main {
+            public static void main(String[] args) {
+                Vehicle vehicle = new Vehicle();
+                Car car = new Car();
+                vehicle.drive(); // Output: Repairing a vehicle
+                car.drive(); // Output: Repairing a car
+            }
+        }
+                        
+                                 
+     </pre>

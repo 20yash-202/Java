@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>6. Create a simple AWT application that displays a Checkbox with FlowLayout manager. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.awt.*;    
+public class CheckboxExample1  
+{    
+// constructor to initialize  
+     CheckboxExample1() {    
+// creating the frame with the title  
+       Frame f = new Frame("Checkbox Example");    
+// creating the checkboxes  
+        Checkbox checkbox1 = new Checkbox("C++");    
+         
+        Checkbox checkbox2 = new Checkbox("Java", true);    
+ 
+// adding checkboxes to frame  
+        f.add(checkbox1);    
+        f.add(checkbox2);    
+ 
+        f.setSize(400,400);      
+        f.setVisible(true);    
+     }    
+// main method  
+public static void main (String args[])    
+{    
+    new CheckboxExample1();    
+}    
+} 
+     </pre>

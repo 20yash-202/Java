@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>2.Write a Java method to compute the average of three numbers. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.util.Scanner;
+        public class Exercise2 {
+        
+         public static void main(String[] args)
+            {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input the first number: ");
+                double x = in.nextDouble();
+                System.out.print("Input the second number: ");
+                double y = in.nextDouble();
+                System.out.print("Input the third number: ");
+                double z = in.nextDouble();
+                System.out.print("The average value is " + average(x, y, z)+"\n" );
+            }
+        
+          public static double average(double x, double y, double z)
+            {
+                return (x + y + z) / 3;
+            }
+        }
+        
+
+     </pre>

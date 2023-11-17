@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>3. Create a simple AWT application that displays multiple buttons with BorderLayout manager (North, East, West, South, Center). </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.awt.*;      
+            
+        public class Border   
+        {    
+        Frame f;    
+        Border()  
+        {    
+            f = new Frame();    
+                
+             // creating buttons  
+            Button b1 = new Button("NORTH");; // the button will be labeled as NORTH   
+            Button b2 = new Button("SOUTH");; // the button will be labeled as SOUTH  
+            Button b3 = new Button("EAST");; // the button will be labeled as EAST  
+            Button b4 = new Button("WEST");; // the button will be labeled as WEST  
+            Button b5 = new Button("CENTER");; // the button will be labeled as CENTER  
+                
+            f.add(b1, BorderLayout.NORTH); // b1 will be placed in the North Direction    
+            f.add(b2, BorderLayout.SOUTH);  // b2 will be placed in the South Direction    
+            f.add(b3, BorderLayout.EAST);  // b2 will be placed in the East Direction    
+            f.add(b4, BorderLayout.WEST);  // b2 will be placed in the West Direction    
+            f.add(b5, BorderLayout.CENTER);  // b2 will be placed in the Center    
+                
+            f.setSize(300, 300);    
+            f.setVisible(true);    
+        }    
+        public static void main(String[] args) {    
+            new Border();    
+        }    
+        }   
+     </pre>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>2. Create a simple AWT application that displays a button with Custom Layout.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.awt.*;    
+public class ButtonExample {    
+public static void main (String[] args) {   
+  
+    // create instance of frame with the label   
+    Frame f = new Frame("Button Example");    
+  
+    // create instance of button with label  
+    Button b = new Button("Click Here");   
+  
+    // set the position for the button in frame   
+    b.setBounds(50,100,80,30);    
+  
+    // add button to the frame  
+    f.add(b);    
+    // set size, layout and visibility of frame  
+    f.setSize(400,400);    
+    f.setLayout(null);    
+    f.setVisible(true);     
+}    
+} 
+     </pre>

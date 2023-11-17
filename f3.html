@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>3. Write a Java method to find all twin prime numbers less than 100.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.util.Scanner;
+        public class Exercise16 {
+         
+         public static void main(String[] args) {
+        
+                for (int i = 2; i < 100; i++) {
+        
+                    if (is_Prime(i) && is_Prime(i + 2)) {
+                        System.out.printf("(%d, %d)\n", i, i + 2);
+                    }
+                }
+            }
+        
+            public static boolean is_Prime(long n) {
+        
+                if (n < 2) return false;
+        
+                for (int i = 2; i <= n / 2; i++) {
+        
+                    if (n % i == 0) return false;
+                }
+                return true;
+            }
+        
+        }
+        
+        
+
+     </pre>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>6. Enter the boolean from user using Scanner class. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        boolean b = false;
+        do {
+            try {
+                System.out.print("Are you above 18?");
+                Scanner n = new Scanner(System.in);
+                boolean bn = n.nextBoolean();
+                if (bn == true) {
+                    System.out.println("Over 18");
+                } else if (bn == false) {
+                    System.out.println("under 18");
+                }
+
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input!");
+            }
+        } while (!b);
+        
+     </pre>

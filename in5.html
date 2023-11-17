@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>5. Enter the double from user using Scanner class. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.util.Scanner;
+
+        class Main {
+          public static void main(String[] args) {
+            Scanner myObj = new Scanner(System.in);
+        
+            System.out.println("Enter name, age and salary:");
+        
+            // String input
+            String name = myObj.nextLine();
+        
+            // Numerical input
+            int age = myObj.nextInt();
+            double salary = myObj.nextDouble();
+        
+            // Output input by user
+            System.out.println("Name: " + name);
+            System.out.println("Age: " + age);
+            System.out.println("Salary: " + salary);
+          }
+        }
+        
+     </pre>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>9.How to convert String to Date.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Java Program to Convert String to Date
+// Using Instant Class
+
+// Importing required classes
+import java.time.Instant;
+import java.time.format.DateTimeParseException;
+
+// Main class
+class GFG {
+
+	// Method
+	// To convert String to Date
+	public static Instant getDateFromString(String string)
+	{
+		// Creating an instant object
+		Instant timestamp = null;
+
+		// Parsing the string to Date
+		timestamp = Instant.parse(string);
+
+		// Returning the converted timestamp
+		return timestamp;
+	}
+
+	// Method 2
+	// Main driver method
+	public static void main(String[] args)
+	{
+		// Getting the string
+		String string = "2018-10-28T15:23:01Z";
+
+		// Try block to check for exceptions
+		try {
+
+			// Getting the Date from String by
+			// creating object of Instant class
+			Instant timestamp = getDateFromString(string);
+
+			// Printing the converted date
+			System.out.println(timestamp);
+		}
+
+		// Catch block to handle exceptions
+		catch (DateTimeParseException e) {
+
+			// Throws DateTimeParseException
+			// if the string cannot be parsed
+			System.out.println("Exception: " + e);
+		}
+	}
+}
+
+        
+     </pre>

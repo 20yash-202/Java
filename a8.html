@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>8. Create a simple AWT application that displays a Label with FlowLayout manager.  </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.awt.*;    
+  
+public class LabelExample {    
+public static void main(String args[]){   
+  
+    // creating the object of Frame class and Label class  
+    Frame f = new Frame ("Label example");  
+    Label l1, l2;    
+  
+    // initializing the labels   
+    l1 = new Label ("First Label.");   
+    l2 = new Label ("Second Label.");   
+
+    // adding labels to the frame    
+    f.add(l1);  
+    f.add(l2);   
+ 
+    f.setSize(400,400);    
+    f.setVisible(true);    
+}    
+}    
+     </pre>

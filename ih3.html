@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>3. Write a Java program to create a class called Shape with a method called getArea(). Create a subclass called Rectangle that overrides the getArea() method to calculate the area of a rectangle.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Shape.java
+// Parent class Shape
+public class Shape {
+    public double getArea() {
+        return 0.0;
+    }
+} 
+// Rectangle.java
+// Child class Rectangle
+public class Rectangle extends Shape {
+    private double length;
+    private double width;
+    
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+  @Override
+    public double getArea() {
+        return length * width;
+    }
+}
+// Main.java
+// Main class
+public class Main {
+    public static void main(String[] args) {
+    Rectangle rectangle = new Rectangle(3.0, 10.0);
+    double area = rectangle.getArea();
+    System.out.println("The area of the rectangle is: " + area);
+    }
+}
+         
+                                 
+     </pre>

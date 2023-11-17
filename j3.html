@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>3.Insert the row in the table in the database from Java API. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.sql.*;
+
+        public class GFG {
+            public static void main(String arg[])
+            {
+                Connection connection = null;
+                try {
+                    // below two lines are used for connectivity.
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    connection = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/mydb",
+                        "mydbuser", "mydbuser");
+                        System.out.println("Inserting records into the table...");          
+                        String sql = "INSERT INTO Registration VALUES (100, 'Zara', 'Ali', 18)";
+                        stmt.executeUpdate(sql);
+                        sql = "INSERT INTO Registration VALUES (101, 'Mahnaz', 'Fatma', 25)";
+                        stmt.executeUpdate(sql);
+                        sql = "INSERT INTO Registration VALUES (102, 'Zaid', 'Khan', 30)";
+                        stmt.executeUpdate(sql);
+                        sql = "INSERT INTO Registration VALUES(103, 'Sumit', 'Mittal', 28)";
+                        stmt.executeUpdate(sql);
+                        System.out.println("Inserted records into the table...");
+                }
+                catch (Exception exception) {
+                    System.out.println(exception);
+                }
+            } // function ends
+        } // class ends
+                                  
+     </pre>

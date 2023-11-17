@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>8.  Write a Java program that reads a file and throws an exception if the file is empty.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.io.File;
+        import java.io.FileNotFoundException;
+        import java.util.Scanner;
+        
+        public class Empty_File_Check {
+          public static void main(String[] args) {
+            try {
+              checkFileNotEmpty("test1.txt");
+              System.out.println("File is not empty.");
+            } catch (FileNotFoundException e) {
+              System.out.println("Error: " + e.getMessage());
+            } catch (EmptyFileException e) {
+              System.out.println("Error: " + e.getMessage());
+            }
+          }
+        
+          public static void checkFileNotEmpty(String fileName) throws FileNotFoundException, EmptyFileException {
+            File file = new File(fileName);
+            Scanner scanner = new Scanner(file);
+        
+            if (!scanner.hasNextLine()) {
+              scanner.close();
+              throw new EmptyFileException("File is empty.");
+            }
+        
+            scanner.close();
+          }
+        }
+        
+        class EmptyFileException extends Exception {
+          public EmptyFileException(String message) {
+            super(message);
+          }
+        }
+        
+
+     </pre>

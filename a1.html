@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>1.  Create a simple AWT application that displays a button with FlowLayout manager.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.awt.*;      
+            
+        public class FlowLayoutExample  
+        {   
+           
+        Frame frameObj;  
+          
+        // constructor    
+        FlowLayoutExample()  
+        {    
+            // creating a frame object  
+            frameObj = new Frame();    
+                
+             // creating the buttons  
+            Button b1 = new Button("1");    
+           
+            // adding the buttons to frame        
+            frameObj.add(b1); 
+           
+            frameObj.setLayout(new FlowLayout());    
+                
+            frameObj.setSize(300, 300);    
+            frameObj.setVisible(true);    
+        }    
+          
+        // main method  
+        public static void main(String argvs[])   
+        {    
+            new FlowLayoutExample();    
+        }    
+        }    
+     </pre>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>9. Create a program, showing an example of dynamic method dispatch</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // A Java program to illustrate Dynamic Method 
+        // Dispatch using hierarchical inheritance 
+        class A 
+        { 
+            void m1() 
+            { 
+                System.out.println("Inside A's m1 method"); 
+            } 
+        } 
+        
+        class B extends A 
+        { 
+            // overriding m1() 
+            void m1() 
+            { 
+                System.out.println("Inside B's m1 method"); 
+            } 
+        } 
+        
+        class C extends A 
+        { 
+            // overriding m1() 
+            void m1() 
+            { 
+                System.out.println("Inside C's m1 method"); 
+            } 
+        } 
+        
+        // Driver class 
+        class Dispatch 
+        { 
+            public static void main(String args[]) 
+            { 
+                // object of type A 
+                A a = new A(); 
+        
+                // object of type B 
+                B b = new B(); 
+        
+                // object of type C 
+                C c = new C(); 
+        
+                // obtain a reference of type A 
+                A ref; 
+                
+                // ref refers to an A object 
+                ref = a; 
+        
+                // calling A's version of m1() 
+                ref.m1(); 
+        
+                // now ref refers to a B object 
+                ref = b; 
+        
+                // calling B's version of m1() 
+                ref.m1(); 
+        
+                // now ref refers to a C object 
+                ref = c; 
+        
+                // calling C's version of m1() 
+                ref.m1(); 
+            } 
+        } 
+        
+                       
+     </pre>

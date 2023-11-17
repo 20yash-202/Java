@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>7. Create a Scrollable Readonly Resultset and ask the row number from the user and display that row on the screen.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.sql.*;
+
+        public class GFG {
+            public static void main(String arg[])
+            {
+                Connection connection = null;
+                try {
+                    // below two lines are used for connectivity.
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    connection = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/mydb",
+                        "mydbuser", "mydbuser");
+                        String sql = "SELECT * FROM student";
+ 
+            Statement statement = conn.createStatement(
+                    ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+ 
+            ResultSet result = statement.executeQuery(sql);
+ 
+            result.first();
+ 
+            readStudentInfo("first", result);
+ 
+            result.relative(3);
+ 
+            readStudentInfo("relative(3)", result);
+ 
+            result.previous();
+ 
+            readStudentInfo("previous", result);
+ 
+            result.absolute(4);
+ 
+            readStudentInfo("absolute(4)", result);
+ 
+            result.last();
+ 
+            readStudentInfo("last", result);
+ 
+            result.relative(-2);
+ 
+            readStudentInfo("relative(-2)", result);
+ 
+ 
+                }
+                catch (Exception exception) {
+                    System.out.println(exception);
+                }
+            } // function ends
+        } // class ends
+                                  
+     </pre>

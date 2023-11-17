@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>9. Write a Java method to display the middle character of a string. Note: a) If the length of the string is odd there will be two middle characters. b) If the length of the string is even there will be one middle character. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.util.Scanner;
+public class Exercise3 {
+  public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a string: ");
+        String str = in.nextLine();
+        System.out.print("The middle character in the string: " + middle(str)+"\n");
+    }
+ public static String middle(String str)
+    {
+        int position;
+        int length;
+        if (str.length() % 2 == 0)
+        {
+            position = str.length() / 2 - 1;
+            length = 2;
+        }
+        else
+        {
+            position = str.length() / 2;
+            length = 1;
+        }
+        return str.substring(position, position + length);
+    }
+}
+
+     </pre>

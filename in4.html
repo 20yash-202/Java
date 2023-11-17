@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>4. Enter the float from user using Scanner class.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.util.*;  
+        public class ScannerNextFloatExample1 {    
+            public static void main(String args[]){       
+                int amount;  
+                double balance;  
+                //Insert amount and balance from console  
+                Scanner input = new Scanner (System.in);  
+                System.out.print("Enter the amount: ");  
+                amount = input.nextInt();  
+                System.out.print("Enter the Total Balance: ");  
+                balance = input.nextFloat();  
+                //Reduce amount+fee from balance  
+                balance = balance-(amount + 0.50);  
+                //Print new balance  
+                System.out.print("New Balance is: "+balance);  
+              input.close();  
+            }    
+        }  
+        
+     </pre>

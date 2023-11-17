@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>4. Create a simple AWT application that displays a TextField with FlowLayout manager.  </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.awt.*;   
+        public class TextFieldExample1 {  
+            // main method  
+            public static void main(String args[]) {    
+            // creating a frame  
+            Frame f = new Frame("TextField Example");    
+          
+            // creating objects of textfield  
+            TextField t1, t2;    
+            // instantiating the textfield objects  
+            t1 = new TextField("Welcome to Javatpoint.");    
+              
+            t2 = new TextField("AWT Tutorial");    
+             
+            // adding the components to frame  
+            f.add(t1);  
+            f.add(t2);   
+            // setting size, layout and visibility of frame   
+            f.setSize(400,400);        
+            f.setVisible(true);    
+        }    
+        }    
+     </pre>

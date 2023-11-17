@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>9.  Get all characters from the file and display on the screen. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.util.Scanner;
+import java.io.*;
+
+public class CodesCracker
+{
+    public static void main(String[] args)
+    {
+        String fname;
+        Scanner scan = new Scanner(System.in);
+        
+        // enter filename along with its extension
+        System.out.print("Enter the Name of File: ");
+        fname = scan.nextLine();
+        
+        String line = null;
+        try
+        {
+            FileReader fileReader = new FileReader(fname);
+            
+            // always wrap the FileReader in BufferedReader
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            
+            while((line = bufferedReader.readLine()) != null)
+            {
+                System.out.println(line);
+            }
+            
+            // always close the file after its use
+            bufferedReader.close();
+        }
+        catch(IOException ex)
+        {
+            System.out.println("\nError occurred");
+            System.out.println("Exception Name: " +ex);
+        }
+    }
+}
+     </pre>
