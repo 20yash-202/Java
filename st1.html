@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>1.  Program to Check if a String contains only digits?</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Java program for the above approach 
+// contains only digits 
+class GFG { 
+
+	// Function to check if a string 
+	// contains only digits 
+	public static boolean
+	onlyDigits(String str, int n) 
+	{ 
+		// Traverse the string from 
+		// start to end 
+		for (int i = 0; i < n; i++) { 
+
+			// Check if character is 
+			// not a digit between 0-9 
+			// then return false
+			if (str.charAt(i) < '0'
+				|| str.charAt(i) > '9') { 
+				return false; 
+			} 
+		} 
+		// If we reach here, that means 
+		// all characters were digits.
+		return true; 
+	} 
+
+	// Driver Code 
+	public static void main(String args[]) 
+	{ 
+		// Given string str 
+		String str = "1a234"; 
+		int len = str.length(); 
+
+		// Function Call 
+		System.out.println(onlyDigits(str, len)); 
+	} 
+}
+
+     </pre>

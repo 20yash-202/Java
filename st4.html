@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>4.Program to remove all occurrences of a given character from input String? </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        import java.util.Scanner;
+
+        public class DeleteAllCharOcc1 {
+            private static Scanner sc;
+            public static void main(String[] args) {
+                String delLastCharStr;
+                char del_lch;
+                
+                sc= new Scanner(System.in);
+        
+                System.out.print("\nPlease Enter String to Delete All Characters =  ");
+                delLastCharStr = sc.nextLine();
+                
+                System.out.print("\nEnter the Character to Delete =  ");
+                del_lch = sc.next().charAt(0);
+                
+                String out = delLastCharStr.replace(del_lch, Character.MIN_VALUE); 
+                
+                System.out.println("\nThe Final String after Deleting " + 
+                        del_lch + " Characters = " + out);
+            }
+        }
+        
+
+     </pre>

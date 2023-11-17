@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>6.Program to insert the string using StringBuffer class  </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Java program to demonstrate StringBuffer insert 
+        // for boolean input. 
+        import java.lang.*; 
+        
+        public class GFG { 
+            public static void main(String[] args) 
+            { 
+                StringBuffer str = 
+                    new StringBuffer("geeks for geeks"); 
+                System.out.println("string = " + str); 
+        
+                // insert boolean value at offset 8 
+                str.insert(8, true); 
+        
+                // prints stringbuffer after insertion 
+                System.out.print("After insertion = "); 
+                System.out.println(str.toString()); 
+            } 
+        } 
+        
+
+     </pre>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>3.  Program to prove String is immutable programmatically?</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        public class ProveStringImmutable {  
+            public static void referenceCheck(Object x, Object y) {  
+                if (x == y) {  
+                    System.out.println("Both pointing to the same reference");  
+           
+                } else {  
+                    System.out.println("Both are pointing to different reference");  
+                }  
+            }  
+            public static void main(String[] args) {  
+                String st1 = "Java";  
+                String st2 = "Java";  
+                System.out.println("Before Modification in st1");  
+                referenceCheck(st1, st2);  
+                st1 += "ava";  
+                System.out.println("After Modification");  
+                referenceCheck(st1, st2);  
+            }  
+        }  
+
+
+     </pre>

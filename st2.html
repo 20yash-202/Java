@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>2.  Program to perform Deep Copy for String?</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Code explaining deep copy 
+public class Ex { 
+	
+	private int[] data; 
+
+	// altered to make a deep copy of values 
+	public Ex(int[] values) { 
+		data = new int[values.length]; 
+		for (int i = 0; i < data.length; i++) { 
+			data[i] = values[i]; 
+		} 
+	} 
+
+	public void showData() { 
+		System.out.println(Arrays.toString(data)); 
+	} 
+} 
+
+
+     </pre>

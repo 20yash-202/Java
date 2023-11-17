@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>5. Program to append the string using StringBuffer class  </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <pre >
+        // Java program to illustrate the 
+// StringBuffer append(boolean a) 
+import java.lang.*; 
+
+public class Geeks { 
+
+	public static void main(String[] args) 
+	{ 
+
+		StringBuffer sbf1 = new StringBuffer("We are geeks and its really "); 
+		System.out.println("Input: " + sbf1); 
+
+		// Appending the boolean value 
+		sbf1.append(true); 
+		System.out.println("Output: " + sbf1); 
+
+		System.out.println(); 
+
+		StringBuffer sbf2 = new StringBuffer("We are lost - "); 
+		System.out.println("Input: " + sbf2); 
+
+		// Appending the boolean value 
+		sbf2.append(false); 
+		System.out.println("Output: " + sbf2); 
+	} 
+} 
+
+     </pre>
