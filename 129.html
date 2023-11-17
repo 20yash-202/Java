@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>129. Write a Java method to check numbers is palindrome number or not.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class palindrome{ <br>
+            public static void main(String st[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.println("Enter any number: "); <br>
+            String str1= br.readLine(); <br>
+            int num1= Integer.parseInt(str1); <br>
+            int d= num1; <br>
+            int num2=0; int mod; <br>
+            while(d != 0){ <br>
+            mod= d%10; <br>
+            num2= (num2*10)+mod; <br>
+            d= d/10;} <br>
+            if(num1 == num2){ <br>
+            System.out.println("This Number is palindrome ");} <br>
+            else{System.out.println("This Number is not palindrome ");} <br>
+            } <br>
+            } <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog129.jpg"  class="img129">

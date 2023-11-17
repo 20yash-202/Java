@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>85. Write a Java program to test if an array contains a specific value.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class findvalarray{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter size of array: ");  <br>
+            String str= br.readLine(); <br>
+            int n = Integer.parseInt(str); <br>
+            int arr1[]; <br>
+            arr1= new int[n]; <br>
+            for(int i=0; i< n;i++){ <br>
+            System.out.print("Enter value of "+i+" "); <br>
+            String str1= br.readLine(); <br>
+            int x = Integer.parseInt(str1); <br>
+            arr1[i]=x; <br>
+            } <br>
+            int count=0; <br>
+            System.out.println("Entered array element to find : "); <br>
+            String str2= br.readLine(); <br>
+            int num1 = Integer.parseInt(str2); <br>
+            for(int i =0; i< n;i++){ <br>
+            count++; <br>
+            if(arr1[i]==num1){ <br>
+            System.out.print("\n The given element exist in the array"); <br>
+            break;} <br>
+            else{ <br>
+            if(count==n){System.out.print("\n The given element does not exist in the array");} <br>
+            }}  <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog85.jpg"  class="img85">

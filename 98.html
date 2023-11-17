@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>98. Write a Java program to cyclically rotate a given array clockwise by one.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class cyclicallyrotation{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter size of array: ");  <br>
+            String str= br.readLine(); <br>
+            int n = Integer.parseInt(str); <br>
+            int arr1[]; <br>
+            arr1= new int[n]; <br>
+            for(int i=0; i< n;i++){ <br>
+            System.out.print("Enter value of "+i+" "); <br>
+            String str1= br.readLine(); <br>
+            int x = Integer.parseInt(str1); <br>
+            arr1[i]=x; <br>
+            } <br>
+            
+            System.out.println("original array1 is: "); <br>
+            for(int y: arr1){ <br>
+            System.out.print("\t"+y);} <br>
+            int j=0; <br>
+            int arr2[]; <br>
+            arr2= new int[n]; <br>
+            arr2[j]=arr1[n-1]; <br>
+            j++; <br>
+            for(int i=0; i< n-1;i++){ <br>
+            arr2[j]=arr1[i]; <br>
+            j++; <br>
+            } <br>
+            
+            System.out.println("\n array after cyclically rotation by one is: "); <br>
+            for(int y: arr2){ <br>
+            System.out.print("\t"+y);} <br>
+            
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog98.jpg"  class="img98">

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>111. Write a Java program that reads a set of integers, and then prints the sum of the even and odd integers using loop. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class sum{  <br>
+            public static void main(String arg[]) throws java.io.IOException{  <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in);  <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr);  <br>
+            
+            int arr1[];  <br>
+            arr1= new int[5];  <br>
+            for(int i=0; i< 5;i++){  <br>
+            System.out.print("Enter value of "+i+" ");  <br>
+            String str1= br.readLine();  <br>
+            int x = Integer.parseInt(str1);  <br>
+            arr1[i]=x;  <br>
+            }  <br>
+            int even=0; int odd=0;  <br>
+            for(int i=0;i< 5;i++){  <br>
+            if(arr1[i]%2==0){even= even+arr1[i];}  <br>
+            else{odd=odd+arr1[i];}  <br>
+            }  <br>
+            System.out.println("Sum of even numbers is: "+even);  <br>
+            System.out.println("Sum of odd numbers is: "+odd);  <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog111.jpg"  class="img111">

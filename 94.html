@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>94. Write a Java program to find second lowest number from the array. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class minarray{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            
+            int arr1[]; <br>
+            arr1= new int[5]; <br>
+            for(int i=0; i< 5;i++){ <br>
+            System.out.print("Enter value of "+i+" "); <br>
+            String str1= br.readLine(); <br>
+            int x = Integer.parseInt(str1); <br>
+            arr1[i]=x; <br>
+            } <br>
+            int key= arr1[0];  <br>
+            int key1= arr1[0]; int index=0; <br>
+            for(int i=1;i< 5;i++){ <br>
+            if(key>arr1[i]){ <br>
+            key= arr1[i];} <br>
+            } <br>
+            
+            for(int i=1;i< 5;i++){ <br>
+            if(key==arr1[i]){ <br>
+            index=i; <br>
+            break;} <br>
+            } <br>
+            for(int i=1;i< 5;i++){ <br>
+            if(i!=index){ <br>
+            if(key1>arr1[i]){ <br>
+            key1= arr1[i];} <br>
+            }} <br>
+            System.out.println("Second Minimum number in array is: "+key1); <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog94.jpg"  class="img94">

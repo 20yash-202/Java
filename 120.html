@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>120. Write a Java method to compute the average of three numbers. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class average3{ <br>
+            public static void main(String st[]) throws java.io.IOException{ <br>
+            
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            
+            System.out.println("Enter Number1: "); <br>
+            String str1= br.readLine(); <br>
+            int num1= Integer.parseInt(str1); <br>
+            
+            System.out.println("Enter Number2: "); <br>
+            String str2= br.readLine(); <br>
+            int num2= Integer.parseInt(str2); <br>
+            
+            System.out.println("Enter Number3: "); <br>
+            String str3= br.readLine(); <br>
+            int num3= Integer.parseInt(str3); <br>
+            
+            System.out.println("Average of three numbers is: "+ ((num1+num2+num3)/3)); <br>
+            }}
+            <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog120.jpg"  class="img120">

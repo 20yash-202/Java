@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>112. Write a Java program to check whether the number is a prime number or not. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class checkprime{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("enter any number: "); <br>
+            String str= br.readLine(); <br>
+            int num= Integer.parseInt(str); <br>
+            int count=0; <br>
+            for(int i=2; i<=num/2;i++){ <br>
+            if(num%i==0){count++;}} <br>
+            if(count==0 && num!=1){ <br>
+            System.out.println("\n"+num+" is a prime number");} <br>
+            else{ <br>
+            System.out.println("\n"+num+" is not a prime number");} <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog112.jpg"  class="img112">

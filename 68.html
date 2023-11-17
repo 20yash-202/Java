@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>68. Write a Java program to create a simple calculator.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class cal{ <br>
+            void opr(int x, int y ,char s){ <br>
+            switch(s){ <br>
+            case '+': <br>
+            System.out.println("Sum of two numbers is:" ); <br>
+            System.out.println(x + y); <br>
+            break; <br>
+            case '-': <br>
+            System.out.println("Difference of two numbers is:" ); <br>
+            System.out.println(x - y); <br>
+            break; <br>
+            case '*': <br>
+            System.out.println("Multiplication of two numbers is:" ); <br>
+            System.out.println(x * y); <br>
+            break; <br>
+            case '/': <br>
+            System.out.println("Division of two numbers is:" ); <br>
+            System.out.println(x / y); <br>
+            break; <br>
+            default: <br>
+            System.out.println("Error!!!! Wrong input"); <br>
+            }} <br>
+            public static void main(String st[]) throws java.io.IOException{ <br>
+            cal obj= new cal(); <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.println("Enter Number1: "); <br>
+            String str1= br.readLine(); <br>
+            int num1= Integer.parseInt(str1); <br>
+            System.out.println("Enter Number2: "); <br>
+            String str2= br.readLine(); <br>
+            int num2= Integer.parseInt(str2); <br>
+            System.out.println("Enter operation(+,-,/,*): "); <br>
+            String str3= br.readLine(); <br>
+            char c = str3.charAt(0); <br>
+            obj.opr(num1,num2,c); <br>
+            }} <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog68.jpg"  class="img68">

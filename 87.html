@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>87. Write a Java program to insert an element (specific position) into an array.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class insertvalarray{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter size of array: ");  <br>
+            String str= br.readLine(); <br>
+            int n = Integer.parseInt(str); <br>
+            int arr1[]; <br>
+            arr1= new int[n]; <br>
+            for(int i=0; i< n;i++){ <br>
+            System.out.print("Enter value of "+i+" "); <br>
+            String str1= br.readLine(); <br>
+            int x = Integer.parseInt(str1); <br>
+            arr1[i]=x; <br>
+            } <br>
+            System.out.println("enter the index to insert value: "); <br>
+            String str2= br.readLine(); <br>
+            int index = Integer.parseInt(str2); <br>
+            System.out.println("\nenter the value to insert : "); <br>
+            String str3= br.readLine(); <br>
+            int val = Integer.parseInt(str3); <br>
+            System.out.println("original array is: "); <br>
+            for(int y: arr1){ <br>
+            System.out.print("\t"+y);} <br>
+            arr1[index]= val; <br>
+            System.out.println("\nNew array is: "); <br>
+            for(int y: arr1){ <br>
+            System.out.print("\t"+y);} <br>
+            }} <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog87.jpg"  class="img87">

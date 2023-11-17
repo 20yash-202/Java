@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>65. Write a Java program that accepts three numbers and check All numbers are equal or not.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class equal{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("ENTER Number1: "); <br>
+            String s = br.readLine(); <br>
+            int n1= Integer.parseInt(s); <br>
+            System.out.print("\nENTER Number2: "); <br>
+            String s1 = br.readLine(); <br>
+            int n2= Integer.parseInt(s1); <br>
+            System.out.print("\nENTER Number3: "); <br>
+            String s2 = br.readLine(); <br>
+            int n3= Integer.parseInt(s2); <br>
+            if(n1==n2 && n1==n3 ){ <br>
+            System.out.println("All the three numbers are equal");} <br>
+            else{ <br>
+            System.out.println("All the three numbers are not equal");} <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog65.jpg"  class="img65">

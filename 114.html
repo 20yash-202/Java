@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>114. Write a Java program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class countnumbers{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            int n2=0; <br>
+            int positive=0; int negative=0; int zero=0; <br>
+            do{ <br>
+            System.out.print("enter number: "); <br>
+            String str= br.readLine(); <br>
+            int n1= Integer.parseInt(str); <br>
+            if(n1>0){positive++;} <br>
+            else if(n1< 0){negative++;} <br>
+            else{zero++;} <br>
+            System.out.println("\nDo you want to enter again? [1.yes/ 2.No]"); <br>
+            String str1= br.readLine(); <br>
+            n2= Integer.parseInt(str1);} <br>
+            while(n2==1); <br>
+            System.out.println("count of eneterd numbers is:\n positive=  "+positive+" \n negative= "+negative+"\n zero= "+zero); <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog114.jpg"  class="img114">

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>123. Write a Java method to count all vowels in a string. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class countvowel{ <br>
+            public static void main(String st[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr);
+            int vowel=0; <br>
+            System.out.println("Enter any string: "); <br>
+            String str1= br.readLine(); <br>
+            System.out.println("Entered string is: "+str1); <br>
+            for(int i=0; i< str1.length(); i++){ <br>
+            if((str1.charAt(i) == 'a') || (str1.charAt(i) = <br>= <br> 'A') || (str1.charAt(i) == 'i') || (str1.charAt(i) == 'I') ||  <br>
+            (str1.charAt(i) == 'o') || (str1.charAt(i) == 'O') || (str1.charAt(i) == 'u') || (str1.charAt(i) == 'U') || (str1.charAt(i) == 'e') || (str1.charAt(i) == 'E')) <br>
+            {vowel++;}} <br>
+            System.out.println("Number of vowels in string is: "+vowel); <br>
+            }}
+            <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog123.jpg"  class="img123">

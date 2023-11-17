@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>95. Write a Java program to find the number of even and odd integers in a given array of integers. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class evenoddarray{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter size of array: ");  <br>
+            String str= br.readLine(); <br>
+            int n = Integer.parseInt(str); <br>
+            int arr1[]; <br>
+            arr1= new int[n]; <br>
+            for(int i=0; i< n;i++){ <br>
+            System.out.print("Enter value of "+i+" "); <br>
+            String str1= br.readLine(); <br>
+            int x = Integer.parseInt(str1);
+            arr1[i]=x; <br>
+            } <br>
+            for(int i=0;i< n;i++){ <br>
+            if(arr1[i]%2==0){ <br>
+            System.out.println(arr1[i]+ " is even number");} <br>
+            else{ <br>
+            System.out.println(arr1[i]+ " is odd number");} <br>
+            }}}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog95.jpg"  class="img95">

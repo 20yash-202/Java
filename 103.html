@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>103. Write a Java Program to Display Transpose Matrix. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class transposematrix{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            
+            int arr1[][]; <br>
+            arr1= new int[3][3]; <br>
+            int arr2[][]; <br>
+            arr2= new int[3][3]; <br>
+            for(int i=0; i< 3;i++){ <br>
+            for(int j=0; j< 3;j++){ <br>
+            System.out.print("Enter value at "+i+j+" "); <br>
+            String str1= br.readLine(); <br>
+            int x = Integer.parseInt(str1); <br>
+            arr1[i][j]=x; <br>
+            }} <br>
+            System.out.println("\nEntered array is: "); <br>
+            for(int i=0; i< 3;i++){ <br>
+            for(int j=0; j< 3;j++){ <br>
+            System.out.print("\t"+arr1[i][j]);} <br>
+            System.out.print("\n");} <br>
+            System.out.println("\nTranspose array is: "); <br>
+            for(int i=0; i< 3;i++){ <br>
+            for(int j=0; j< 3;j++){ <br>
+            arr2[i][j]= arr1[j][i];}} <br>
+            for(int i=0; i< 3;i++){ <br>
+            for(int j=0; j< 3;j++){ <br>
+            System.out.print("\t"+arr2[i][j]);} <br>
+            System.out.print("\n");} <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog103.jpg"  class="img103">

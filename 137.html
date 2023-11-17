@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>137. Write a Java program to convert Roman number to an integer number.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class romantoint{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter the Roman number: "); <br>
+            String str= br.readLine(); <br>
+            int num=0; <br>
+            for(int i=0; i< str.length(); i++){ <br>
+            if(str.charAt(i)=='x' || str.charAt(i)=='X'){ <br>
+            num= num+10;} <br>
+            else if(str.charAt(i)=='i' || str.charAt(i)=='I'){ <br>
+            num= num+1;} <br>
+            else if(str.charAt(i)=='v' || str.charAt(i)=='V'){ <br>
+            num= num+5;} <br>
+            else if(str.charAt(i)=='l' || str.charAt(i)=='L'){ <br>
+            num= num+50;} <br>
+            else if(str.charAt(i)=='c' || str.charAt(i)=='C'){ <br>
+            num= num+100;} <br>
+            else if(str.charAt(i)=='d' || str.charAt(i)=='D'){ <br>
+            num= num+500;} <br>
+            else if(str.charAt(i)=='m' || str.charAt(i)=='M'){ <br>
+            num= num+1000;} <br>
+            else{ <br>
+            System.out.println("invalid roman number");}} <br>
+            System.out.println("Roman number is: "+ str); <br>
+            System.out.println("integer number is: "+ num); <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog137.jpg"  class="img137">

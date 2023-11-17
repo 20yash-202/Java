@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>92. Write a Java program to add two matrices of the same size.  </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class addarray{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.println("enter values of array1: "); <br>
+            int arr1[][]; <br>
+            arr1= new int[2][2]; <br>
+            for(int i=0; i< 2;i++){ <br>
+            for(int j=0; j< 2;j++){ <br>
+            System.out.print("Enter value of "+i+j+" "); <br>
+            String str1= br.readLine(); <br>
+            int x = Integer.parseInt(str1); <br>
+            arr1[i][j]=x; <br>
+            }} <br>
+            System.out.println("\nenter values of array2: "); <br>
+            int arr2[][]; <br>
+            arr2= new int[2][2]; <br>
+            for(int i=0; i< 2;i++){ <br>
+            for(int j=0; j< 2;j++){ <br>
+            System.out.print("Enter value of "+i+j+" "); <br>
+            String str2= br.readLine(); <br>
+            int y = Integer.parseInt(str2); <br>
+            arr2[i][j]=y; <br>
+            }} <br>
+            System.out.println("\noriginal array1: "); <br>
+            for(int i=0; i< 2;i++){ <br>
+            for(int j=0; j< 2;j++){ <br>
+            System.out.print("\t"+arr1[i][j]);} <br>
+            System.out.print("\n");} <br>
+            System.out.println("\noriginal array2: "); <br>
+            for(int i=0; i< 2;i++){ <br>
+            for(int j=0; j< 2;j++){ <br>
+            System.out.print("\t"+arr2[i][j]);} <br>
+            System.out.print("\n");} <br>
+            System.out.println("\nAddition of array is: "); <br>
+            int arr3[][]; <br>
+            arr3= new int[2][2]; <br>
+            for(int i=0; i< 2;i++){ <br>
+            for(int j=0; j< 2;j++){ <br>
+            
+            arr3[i][j]= arr1[i][j] + arr2[i][j];} <br>
+            } <br>
+            for(int i=0; i< 2;i++){ <br>
+            for(int j=0; j< 2;j++){ <br>
+            System.out.print("\t"+arr3[i][j]);} <br>
+            System.out.print("\n");} <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog92.jpg"  class="img92">

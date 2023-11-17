@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>105. Write a Java Program to Accept the Marks of a Student and find Total Marks and Percentage.   </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class marks{ <br>
+            public static void main(String s[])throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            
+            int sum=0; <br>
+            System.out.println("How many subjects? "); <br>
+            String str1= br.readLine(); <br>
+            int sub = Integer.parseInt(str1); <br>
+            for(int i=1; i<=sub;i++){ <br>
+            System.out.println("Enter the marks of subject "+i); <br>
+            String str2= br.readLine(); <br>
+            int n = Integer.parseInt(str2); <br>
+            sum= sum+n; <br>
+            } <br>
+            System.out.println("Total marks obtained in "+sub+" subjects is: "+sum); <br>
+            int total= sub*100; <br>
+            int percent= (sum*100)/total; <br>
+            System.out.println("Percentage obtained in "+sub+" subjects is: "+percent+"%"); <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog105.jpg"  class="img105">

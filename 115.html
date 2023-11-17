@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>115. Write a Java program to enter the numbers till the user wants and at the end the program should display the largest and smallest numbers entered. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class largeandsmall{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            int n2=0; int j=0; int count=0; <br>
+            int arr1[]; <br>
+            arr1= new int[10]; <br>
+            do{ <br>
+            count++; <br>
+            System.out.print("enter number: "); <br>
+            String str= br.readLine(); <br>
+            int n1= Integer.parseInt(str); <br>
+            arr1[j]=n1; <br>
+            j++; <br>
+            System.out.println("\nDo you want to enter again? [1.yes/ 2.No]"); <br>
+            String str1= br.readLine(); <br>
+            n2= Integer.parseInt(str1);} <br>
+            while(n2==1); <br>
+            int key= arr1[0]; <br>
+            for(int i=1;i< count;i++){ <br>
+            if(key< arr1[i]){ <br>
+            key= arr1[i];} <br>
+            } <br>
+            System.out.println("Maximum number in array is: "+key); <br>
+            int key1= arr1[0]; <br>
+            for(int i=1;i< count;i++){ <br>
+            if(key1>arr1[i]){ <br>
+            key1= arr1[i];} <br>
+            } <br>
+            System.out.println("Minimum number in array is: "+key1); <br>
+            }}
+            <br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog115.jpg"  class="img115">

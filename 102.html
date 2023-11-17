@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>102. Write a Java Program to Sort Names in an Alphabetical Order. </h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class sortname{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            
+            String arr1[]; <br>
+            arr1= new String[5]; <br>
+            for(int i=0; i< 5;i++){ <br>
+            System.out.print("Enter name at "+i+" "); <br>
+            arr1[i]= br.readLine(); <br>
+            } <br>
+            System.out.println("\nArray after sorting in alphabetical order: "); <br>
+            for(int i=0;i< 5;i++){ <br>
+            for(int j=0;j< 5-i-1;j++){ <br>
+            if(arr1[j].compareTo(arr1[j+1]) > 0){ <br>
+            String n= arr1[j]; <br>
+            arr1[j]=arr1[j+1]; <br>
+            arr1[j+1]= n; <br>
+            }}} <br>
+            for(int i=0;i< 5;i++){ <br>
+            System.out.print("\t"+ arr1[i]); <br>
+            }}}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog102.jpg"  class="img102">

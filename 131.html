@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>131. Write a Java method to find GCD and LCM of Two Numbers.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class gcdandlcm{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("enter number1: "); <br>
+            String str= br.readLine(); <br>
+            int n1= Integer.parseInt(str); <br>
+            System.out.print("enter number2: "); <br>
+            String str1= br.readLine(); <br>
+            int n2= Integer.parseInt(str1); <br>
+            int hcf=0; <br>
+            int lcm=1; <br>
+            for(int i=1; i< =n1 || i< =n2; i++){ <br>
+            if(n1%i==0 && n2%i==0){ <br>
+            hcf=i;} <br>
+            } <br>
+            for(int i=1; i< n1 && i< n2; i++){ <br>
+            if(n1%i==0 || n2%i==0){ <br>
+            lcm= lcm*i;} <br>
+            } <br>
+            System.out.println("\nGreatest Common divisor is: "+hcf); <br>
+            System.out.println("\nleast Common multiplier is: "+lcm); <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog131.jpg"  class="img131">

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <b><i class="heading">JAVA</i></b>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="java.html">JAVA</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </div>
+      </nav>
+      <h2>117. Write a java program to count total number of notes in entered amount using loop.</h2>
+      <b><u><h3>SOURCE CODE:-</h3></u></b>
+     <p class="para">
+        class countnotes{ <br>
+            public static void main(String arg[]) throws java.io.IOException{ <br>
+            java.io.InputStreamReader isr= new java.io.InputStreamReader(System.in); <br>
+            java.io.BufferedReader br= new java.io.BufferedReader(isr); <br>
+            System.out.print("Enter amount: ");  <br>
+            String str= br.readLine(); <br>
+            int amt = Integer.parseInt(str); <br>
+            
+            int r500=0; int r100=0; int r50=0; int r10=0; int r5=0; int r20=0;  <br>
+            System.out.println("Number of notes are: "); <br>
+            while(amt>=500){ <br>
+            r500= amt/500; <br>
+            amt= amt%500; <br>
+            System.out.println("500: "+r500);} <br>
+            
+            while(amt>=100){ <br>
+            r100= amt/100; <br>
+            amt= amt%100; <br>
+            System.out.println("100: "+r100);} <br>
+            
+            while(amt>=50){ <br>
+            r500= amt/50; <br>
+            amt= amt%50; <br>
+            System.out.println("50: "+r50);} <br>
+            
+            while(amt>=20){ <br>
+            r500= amt/20; <br>
+            amt= amt%20; <br>
+            System.out.println("20: "+r20);} <br>
+            
+            while(amt>=10){ <br>
+            r500= amt/10; <br>
+            amt= amt%10; <br>
+            System.out.println("10: "+r10);} <br>
+            
+            while(amt>=5){ <br>
+            r500= amt/5; <br>
+            amt= amt%5; <br>
+            System.out.println("5: "+r5);} <br>
+            }}<br>
+     </p>
+     <b><u><h3>OUTPUT:-</h3></u></b>
+     <img src="prog117.jpg"  class="img117">
